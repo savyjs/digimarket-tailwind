@@ -1,6 +1,6 @@
 {
-  "name": "tmk",
-  "version": "1.0.0",
+  "name": "tailwind-marketpalce-kit",
+  "version": "0.1.1",
   "description": "Tailwind Market Kit",
   "main": "index.js",
   "scripts": {

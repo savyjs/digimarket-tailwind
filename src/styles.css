@@ -3,25 +3,48 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
-  h2 {
-    @apply text-xl;
-  }
+    h1 {
+        @apply text-2xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    }
 }
 
 @layer components {
-  .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
-  }
+
+    .list-primary {
+
+    }
+
+    .list {
+        @apply p-0
+    }
+
+    .list .list-item {
+        @apply flex gap-1 w-full py-3 align-middle;
+    }
+
+    .list .list-item:hover {
+
+    }
+
+    .list .list-item .list-item-icon {
+        @apply min-w-[10%] justify-center text-center align-middle;
+    }
+
+    .list .list-item .list-item-text {
+        @apply w-full justify-start align-middle;
+    }
 }
 
 @layer utilities {
-  .filter-none {
-    filter: none;
-  }
-  .filter-grayscale {
-    filter: grayscale(100%);
-  }
+    .filter-none {
+        filter: none;
+    }
+
+    .filter-grayscale {
+        filter: grayscale(100%);
+    }
 }

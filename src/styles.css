@@ -13,13 +13,11 @@
 }
 
 @layer components {
-
     .list-primary {
-
     }
 
     .list {
-        @apply p-0
+        @apply p-0;
     }
 
     .list .list-item {
@@ -27,11 +25,11 @@
     }
 
     .list .list-item:hover {
-
+        @apply bg-gray-50
     }
 
     .list .list-item .list-item-icon {
-        @apply min-w-[10%] justify-center text-center align-middle;
+        @apply min-w-[10%] flex justify-center text-center align-middle;
     }
 
     .list .list-item .list-item-text {

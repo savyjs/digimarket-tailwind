@@ -3,80 +3,89 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
+    h1 {
+        @apply text-2xl;
+    }
 
-  h2 {
-    @apply text-xl;
-  }
+    h2 {
+        @apply text-xl;
+    }
 }
 
 @layer components {
-  /* list and list items */
-  .list.list-primary {
-  }
-  .list.list-timeline {
-  }
+    /* list and list items */
+    .list.list-primary {
+    }
 
-  .list {
-    @apply p-0;
-  }
+    .list.list-timeline {
+    }
 
-  .list .list-item {
-    @apply flex gap-1 w-full py-3 align-middle;
-  }
+    .list {
+        @apply p-0;
+    }
 
-  .list .list-item:hover {
-    @apply bg-gray-50;
-  }
+    .list .list-item {
+        @apply flex gap-1 w-full py-3 align-middle;
+    }
 
-  .list.list-timeline .list-item {
-    @apply lg:mx-[5%] md:mx-[6%] mx-[12.5%] dot;
-  }
+    .list.list-timeline .list-item {
+        @apply lg:mx-[5%] md:mx-[6%] mx-[12.5%];
+    }
 
-  .list.list-timeline .list-item-avatar {
-    @apply lg:max-w-[10%] md:max-w-[12%] max-w-[25%] px-[3px] z-20 mb-5;
-  }
+    .list.list-timeline .list-item .list-item-decoration {
+        @apply grid
+    }
 
-  .list.list-timeline .list-item-avatar img {
-    @apply max-w-full max-h-full z-10;
-  }
+    .list.list-timeline .list-item .list-item-dot {
+        @apply w-1 h-1 bg-gray-300 rounded;
+    }
 
-  .list .list-item .list-item-icon {
-    @apply min-w-[10%] flex justify-center text-center align-middle;
-  }
+    .list.list-timeline .list-item .list-item-linedot {
+        @apply w-[1px] h-8 bg-gray-300 ;
+    }
 
-  .list .list-item .list-item-text {
-    @apply w-full flex justify-start align-middle;
-  }
+    .list.list-timeline .list-item-avatar {
+        @apply lg:max-w-[10%] md:max-w-[12%] max-w-[25%] px-[3px] z-20 mb-5;
+    }
+
+    .list.list-timeline .list-item-avatar img {
+        @apply max-w-full max-h-full z-10;
+    }
+
+    .list .list-item .list-item-icon {
+        @apply min-w-[10%] flex justify-center text-center align-middle;
+    }
+
+    .list .list-item .list-item-text {
+        @apply w-full flex justify-start align-middle;
+    }
 }
 
 @layer utilities {
-  .dot::before {
-    position: relative;
-    content: '';
-    display: block;
-    background: rgb(220, 220, 220);
-    width: 6pt;
-    height: 6pt;
-    margin-top: 20px;
-    border-radius: 500pt;
-  }
+    .dot::before {
+        position: relative;
+        content: '';
+        display: block;
+        background: rgb(220, 220, 220);
+        width: 6pt;
+        height: 6pt;
+        margin-top: 20px;
+        border-radius: 500pt;
+    }
 
-  .filter-none {
-    filter: none;
-  }
+    .filter-none {
+        filter: none;
+    }
 
-  .ltr {
-    direction: ltr;
-  }
+    .ltr {
+        direction: ltr;
+    }
 
-  .rtl {
-    direction: rtl;
-  }
+    .rtl {
+        direction: rtl;
+    }
 
-  .filter-grayscale {
-    filter: grayscale(100%);
-  }
+    .filter-grayscale {
+        filter: grayscale(100%);
+    }
 }

@@ -3,306 +3,315 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
+    h1 {
+        @apply text-2xl;
+    }
 
-  h2 {
-    @apply text-xl;
-  }
+    h2 {
+        @apply text-xl;
+    }
 }
 
 @layer components {
-  /* list and list items */
-  .list.list-primary {
-  }
 
-  .list.list-timeline {
-  }
-
-  .list {
-    @apply p-0;
-  }
-
-  .list .list-item {
-    @apply flex gap-1 w-full py-5 align-middle;
-  }
-
-  .list.list-timeline .list-item {
-    @apply mx-[23pt] py-0;
-  }
-
-  .list.list-primary .list-item:hover {
-    @apply bg-gray-100;
-  }
-
-  .list.list-primary .list-item.active {
-    @apply border-r-2 border-red-300;
-  }
-
-  .list.list-timeline .list-item .list-item-text {
-    @apply align-middle flex self-center px-3;
-  }
-
-  .list.list-timeline .list-item .list-item-decoration {
-    @apply flex flex-col justify-center items-center;
-  }
-
-  .list.list-timeline .list-item .list-item-dot {
-    @apply w-2 h-2 bg-gray-300 rounded-full absolute;
-  }
-
-  .list.list-timeline .list-item .list-item-linedot {
-    @apply w-[1px] min-h-[70px] h-[100%] bg-gray-300 self-start justify-self-start;
-  }
-
-  .list.list-timeline .list-item-avatar {
-    @apply lg:max-w-[50pt] md:max-w-[50pt] max-w-[50px] px-[3pt] mb-0;
-  }
-
-  .list.list-timeline .list-item-avatar img {
-    @apply max-w-full max-h-full z-10;
-  }
-
-  .list .list-item .list-item-icon {
-    @apply min-w-[10%] flex justify-center text-center align-middle dark:fill-gray-200;
-  }
-
-  .list .list-item .list-item-text {
-    @apply w-full flex justify-start align-middle dark:text-gray-200;
-  }
-
-  .list.list-timeline .list-item:last-child .list-item-decoration {
-    @apply justify-start;
-  }
-
-  .list.list-timeline .list-item:last-child .list-item-dot {
-    @apply self-center justify-self-center mt-[20px];
-  }
-
-  .list.list-timeline .list-item:last-child .list-item-linedot {
-    @apply min-h-[20px] max-h-[20px] justify-self-start self-start;
-  }
-
-  .list.list-timeline .list-item:first-child {
-    @apply px-0 mx-0;
-  }
-
-  .input-primary {
-    @apply w-full rounded-lg border border-gray-300 p-3  text-sm font-light text-gray-900 text-gray-900 focus:border-blue-500 focus:border-blue-500 focus:ring-cyan-200 focus:ring-cyan-200 dark:border-gray-600 dark:border-gray-600 dark:text-white dark:text-white dark:placeholder-gray-400 dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:ring-blue-500;
-  }
-
-  .btn-primary {
-    @apply text-center justify-center flex rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-medium text-white dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
-  }
-
-  .btn-primary-outlined {
-    @apply btn-primary bg-transparent text-primary border border-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
-  }
-
-  .btn-gray-outlined {
-    @apply flex rounded-lg border border-gray-400 px-5 py-2.5 text-center text-sm font-medium text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
-  }
-
-  .card-primary {
-    @apply rounded-lg border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-gray-800 sm:p-6 lg:p-6;
-  }
-
-  .badge-primary {
-    @apply rounded bg-gray-400 px-1.5 py-0.5 text-xs font-bold font-semibold text-white dark:bg-gray-700 dark:text-gray-300;
-  }
-
-  .badge-warning {
-    @apply rounded-xl bg-orange-100 px-1.5 py-0.5 text-xs font-bold font-semibold text-orange-400 dark:bg-gray-700 dark:text-gray-300;
-  }
-
-  .active .badge-primary {
-    @apply bg-primary;
-  }
-
-  .text-link {
-    @apply text-secondary;
-  }
-
-  .text-warning {
-    @apply text-orange-400;
-  }
-
-  .tabs-primary {
-    @apply flex;
-  }
-
-  .tabs-primary li {
-    @apply sm:grow lg:grow-0;
-  }
-
-  .tabs-primary button {
-    @apply inline-block w-full font-semibold text-sm rounded-t-lg border-b-2 border-transparent py-4 px-4 text-center text-gray-500;
-  }
-
-  .tabs-primary [role='tab'].active {
-    @apply border-b-red-600 font-extrabold border-b-4 rounded-r border-r-4 border-r-transparent  rounded-l border-l-4 border-l-transparent text-red-600 hover:border-red-600 hover:border-t-transparent hover:border-l-transparent hover:border-r-transparent hover:text-red-600;
-  }
-
-  .product-box-primary {
-    @apply pr-10;
-  }
-
-  .product-box-primary .btn-primary-outlined {
-    @apply text-[12px] font-bold;
-  }
-
-  .product-box-primary .title {
-    @apply text-right text-[14px] mb-5;
-  }
-
-  .product-box-primary .attributes {
-    @apply text-right text-[12px] font-light text-gray-700 space-y-2;
-  }
-
-  .product-box-primary .btn-gray-outlined {
-    @apply text-[12px] font-bold;
-  }
-
-  .product-box-primary .image {
-    @apply p-1 w-1/6  grid grid-cols-1 pb-2;
-  }
-
-  .product-box-primary .image .counter-box-container {
-    @apply place-self-end w-full flex justify-center;
-  }
-
-  .product-box-primary .image a {
-    @apply justify-center flex flex-wrap;
-  }
-
-  .product-box-primary .image img {
-    @apply max-w-full w-28;
-  }
-
-  .product-box-primary .delivery {
-    @apply grow-0 text-right flex gap-3 w-1/2 font-light text-[14px];
-  }
-
-  .product-box-primary .delivery .icon-gray {
-    @apply ml-1;
-  }
-
-  .icon-small {
-    @apply w-4 h-4;
-  }
-
-  .icon-medium {
-    @apply w-6 h-6;
-  }
-
-  .icon-large {
-    @apply w-8 h-8;
-  }
-
-  .icon-gray {
-    @apply fill-gray-600;
-  }
-
-  .icon-primary {
-    @apply fill-red-600;
-  }
-
-  .alert {
-    @apply flex p-1 my-1 text-[12px] rounded-lg gap-1 items-center;
-  }
-
-  .alert-info {
-    @apply alert text-blue-700 fill-blue-700;
-  }
-
-  .alert-warning {
-    @apply alert text-orange-400  fill-orange-400;
-  }
-
-  .alert-error {
-    @apply alert text-red-700  fill-red-700;
-  }
-
-  .alert-success {
-    @apply alert text-green-500 fill-green-500;
-  }
-
-  .time-table .nav-tabs li a {
-    @apply block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 p-0 my-0;
-  }
-
-  .time-table .nav-tabs li a.active {
-    @apply text-blue-300 fill-blue-300 border-blue-300 border-0;
-  }
-
-  .time-table .nav-tabs li a.active p:nth-child(2) {
-    @apply border-b-2 border-blue-300;
-  }
-
-  .time-table .nav-tabs li a div {
-    @apply flex flex-col text-center h-20 justify-around items-center p-0 text-[16px] font-bold pt-2;
-  }
-
-  .time-table .nav-tabs li a div p {
-    @apply pb-4;
-  }
-
-  .time-table .nav-tabs li a div p:nth-child(2) {
-    @apply text-[18px] font-semibold text-gray-600  w-8;
-  }
-
-  .list-options input[type='radio'] + label {
-    @apply fill-gray-400 cursor-pointer;
-  }
-
-  .list-options input[type='radio']:checked + label {
-    @apply fill-blue-400;
-  }
-
-  a[data-bs-toggle='collapse'] {
-    @apply fill-gray-400 text-gray-400;
-  }
-
-  a[data-bs-toggle='collapse'][aria-expanded='true'] .open,
-  a[data-bs-toggle='collapse'][aria-expanded='false'] .close {
-    @apply hidden;
-  }
-
-  .radio-option {
-    @apply ring-2 ring-gray-200 checked:ring-0 focus:ring-transparent text-blue-400;
-  }
-
-  .modal-backdrop.show {
-    @apply z-10;
-  }
+    .bg-default {
+        @apply bg-transparent
+    }
+
+    .bg-default.dark {
+        @apply bg-dark
+    }
+
+    /* list and list items */
+    .list.list-primary {
+    }
+
+    .list.list-timeline {
+    }
+
+    .list {
+        @apply p-0;
+    }
+
+    .list .list-item {
+        @apply flex gap-1 w-full py-5 align-middle;
+    }
+
+    .list.list-timeline .list-item {
+        @apply mx-[23pt] py-0;
+    }
+
+    .list.list-primary .list-item:hover {
+        @apply bg-gray-100;
+    }
+
+    .list.list-primary .list-item.active {
+        @apply border-r-2 border-red-300;
+    }
+
+    .list.list-timeline .list-item .list-item-text {
+        @apply align-middle flex self-center px-3;
+    }
+
+    .list.list-timeline .list-item .list-item-decoration {
+        @apply flex flex-col justify-center items-center;
+    }
+
+    .list.list-timeline .list-item .list-item-dot {
+        @apply w-2 h-2 bg-gray-300 rounded-full absolute;
+    }
+
+    .list.list-timeline .list-item .list-item-linedot {
+        @apply w-[1px] min-h-[70px] h-[100%] bg-gray-300 self-start justify-self-start;
+    }
+
+    .list.list-timeline .list-item-avatar {
+        @apply lg:max-w-[50pt] md:max-w-[50pt] max-w-[50px] px-[3pt] mb-0;
+    }
+
+    .list.list-timeline .list-item-avatar img {
+        @apply max-w-full max-h-full z-10;
+    }
+
+    .list .list-item .list-item-icon {
+        @apply min-w-[10%] flex justify-center text-center align-middle dark:fill-gray-200;
+    }
+
+    .list .list-item .list-item-text {
+        @apply w-full flex justify-start align-middle dark:text-gray-200;
+    }
+
+    .list.list-timeline .list-item:last-child .list-item-decoration {
+        @apply justify-start;
+    }
+
+    .list.list-timeline .list-item:last-child .list-item-dot {
+        @apply self-center justify-self-center mt-[20px];
+    }
+
+    .list.list-timeline .list-item:last-child .list-item-linedot {
+        @apply min-h-[20px] max-h-[20px] justify-self-start self-start;
+    }
+
+    .list.list-timeline .list-item:first-child {
+        @apply px-0 mx-0;
+    }
+
+    .input-primary {
+        @apply w-full rounded-lg border border-gray-300 p-3  text-sm font-light text-gray-900 text-gray-900 focus:border-blue-500 focus:border-blue-500 focus:ring-cyan-200 focus:ring-cyan-200 dark:border-gray-600 dark:border-gray-600 dark:text-white dark:text-white dark:placeholder-gray-400 dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:border-blue-500 dark:focus:ring-blue-500 dark:focus:ring-blue-500;
+    }
+
+    .btn-primary {
+        @apply text-center justify-center flex rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-medium text-white dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
+    }
+
+    .btn-primary-outlined {
+        @apply btn-primary bg-transparent text-primary border border-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
+    }
+
+    .btn-gray-outlined {
+        @apply flex rounded-lg border border-gray-400 px-5 py-2.5 text-center text-sm font-medium text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-800;
+    }
+
+    .card-primary {
+        @apply rounded-lg border border-gray-200 bg-default p-5 dark:border-dark-accent dark:bg-dark sm:p-6 lg:p-6;
+    }
+
+    .badge-primary {
+        @apply rounded bg-gray-400 px-1.5 py-0.5 text-xs font-bold font-semibold text-white dark:bg-gray-700 dark:text-gray-300;
+    }
+
+    .badge-warning {
+        @apply rounded-xl bg-orange-100 px-1.5 py-0.5 text-xs font-bold font-semibold text-orange-400 dark:bg-gray-700 dark:text-gray-300;
+    }
+
+    .active .badge-primary {
+        @apply bg-primary;
+    }
+
+    .text-link {
+        @apply text-secondary;
+    }
+
+    .text-warning {
+        @apply text-orange-400;
+    }
+
+    .tabs-primary {
+        @apply flex;
+    }
+
+    .tabs-primary li {
+        @apply sm:grow lg:grow-0;
+    }
+
+    .tabs-primary button {
+        @apply inline-block w-full font-semibold text-sm rounded-t-lg border-b-2 border-transparent py-4 px-4 text-center text-gray-500;
+    }
+
+    .tabs-primary [role='tab'].active {
+        @apply border-b-red-600 font-extrabold border-b-4 rounded-r border-r-4 border-r-transparent  rounded-l border-l-4 border-l-transparent text-red-600 hover:border-red-600 hover:border-t-transparent hover:border-l-transparent hover:border-r-transparent hover:text-red-600;
+    }
+
+    .product-box-primary {
+        @apply pr-10;
+    }
+
+    .product-box-primary .btn-primary-outlined {
+        @apply text-[12px] font-bold;
+    }
+
+    .product-box-primary .title {
+        @apply text-right text-[14px] mb-5;
+    }
+
+    .product-box-primary .attributes {
+        @apply text-right text-[12px] font-light text-gray-700 space-y-2;
+    }
+
+    .product-box-primary .btn-gray-outlined {
+        @apply text-[12px] font-bold;
+    }
+
+    .product-box-primary .image {
+        @apply p-1 w-1/6  grid grid-cols-1 pb-2;
+    }
+
+    .product-box-primary .image .counter-box-container {
+        @apply place-self-end w-full flex justify-center;
+    }
+
+    .product-box-primary .image a {
+        @apply justify-center flex flex-wrap;
+    }
+
+    .product-box-primary .image img {
+        @apply max-w-full w-28;
+    }
+
+    .product-box-primary .delivery {
+        @apply grow-0 text-right flex gap-3 w-1/2 font-light text-[14px];
+    }
+
+    .product-box-primary .delivery .icon-gray {
+        @apply ml-1;
+    }
+
+    .icon-small {
+        @apply w-4 h-4;
+    }
+
+    .icon-medium {
+        @apply w-6 h-6;
+    }
+
+    .icon-large {
+        @apply w-8 h-8;
+    }
+
+    .icon-gray {
+        @apply fill-gray-600;
+    }
+
+    .icon-primary {
+        @apply fill-red-600;
+    }
+
+    .alert {
+        @apply flex p-1 my-1 text-[12px] rounded-lg gap-1 items-center;
+    }
+
+    .alert-info {
+        @apply alert text-blue-700 fill-blue-700;
+    }
+
+    .alert-warning {
+        @apply alert text-orange-400  fill-orange-400;
+    }
+
+    .alert-error {
+        @apply alert text-red-700  fill-red-700;
+    }
+
+    .alert-success {
+        @apply alert text-green-500 fill-green-500;
+    }
+
+    .time-table .nav-tabs li a {
+        @apply block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 p-0 my-0;
+    }
+
+    .time-table .nav-tabs li a.active {
+        @apply text-blue-300 fill-blue-300 border-blue-300 border-0;
+    }
+
+    .time-table .nav-tabs li a.active p:nth-child(2) {
+        @apply border-b-2 border-blue-300;
+    }
+
+    .time-table .nav-tabs li a div {
+        @apply flex flex-col text-center h-20 justify-around items-center p-0 text-[16px] font-bold pt-2;
+    }
+
+    .time-table .nav-tabs li a div p {
+        @apply pb-4;
+    }
+
+    .time-table .nav-tabs li a div p:nth-child(2) {
+        @apply text-[18px] font-semibold text-gray-600  w-8;
+    }
+
+    .list-options input[type='radio'] + label {
+        @apply fill-gray-400 cursor-pointer;
+    }
+
+    .list-options input[type='radio']:checked + label {
+        @apply fill-blue-400;
+    }
+
+    a[data-bs-toggle='collapse'] {
+        @apply fill-gray-400 text-gray-400;
+    }
+
+    a[data-bs-toggle='collapse'][aria-expanded='true'] .open,
+    a[data-bs-toggle='collapse'][aria-expanded='false'] .close {
+        @apply hidden;
+    }
+
+    .radio-option {
+        @apply ring-2 ring-gray-200 checked:ring-0 focus:ring-transparent text-blue-400;
+    }
+
+    .modal-backdrop.show {
+        @apply z-10;
+    }
 }
 
 @layer utilities {
-  .dot::before {
-    position: relative;
-    content: '';
-    display: block;
-    background: rgb(220, 220, 220);
-    width: 6pt;
-    height: 6pt;
-    margin-top: 20px;
-    border-radius: 500pt;
-  }
+    .dot::before {
+        position: relative;
+        content: '';
+        display: block;
+        background: rgb(220, 220, 220);
+        width: 6pt;
+        height: 6pt;
+        margin-top: 20px;
+        border-radius: 500pt;
+    }
 
-  .filter-none {
-    filter: none;
-  }
+    .filter-none {
+        filter: none;
+    }
 
-  .ltr {
-    direction: ltr;
-  }
+    .ltr {
+        direction: ltr;
+    }
 
-  .rtl {
-    direction: rtl;
-  }
+    .rtl {
+        direction: rtl;
+    }
 
-  .filter-grayscale {
-    filter: grayscale(100%);
-  }
+    .filter-grayscale {
+        filter: grayscale(100%);
+    }
 }

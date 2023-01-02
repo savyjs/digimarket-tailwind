@@ -33,7 +33,7 @@
   }
 
   .list .list-item {
-    @apply flex gap-1 w-full py-5 align-middle;
+    @apply flex gap-1 py-5 align-middle;
   }
 
   .list.list-timeline .list-item {
@@ -77,7 +77,7 @@
   }
 
   .list .list-item .list-item-text {
-    @apply w-full flex justify-start align-middle dark:text-gray-200;
+    @apply dark:text-gray-200;
   }
 
   .list.list-timeline .list-item:last-child .list-item-decoration {

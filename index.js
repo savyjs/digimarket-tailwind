@@ -1,7 +1,12 @@
 const plugin = require('tailwindcss/plugin');
+const postcssJs = require('postcss-js');
+const cssPath = './'
 
 module.exports = plugin(
-  function ({ addUtilities, theme, variants }) {
+  function ({ addUtilities, addComponents, theme, variants }) {
+    // const components = postcssJs.sync(cssPath);
+    // console.log({ components });
+    // addComponents(components);
     // If your plugin requires user config,
     // you can access these options here.
     // Docs: https://tailwindcss.com/docs/plugins#exposing-options

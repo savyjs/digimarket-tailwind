@@ -5,6 +5,8 @@ const postcssTailwincss = require('tailwindcss');
 const postcssTailwincssNesting = require('tailwindcss/nesting');
 const postcss = require('postcss');
 const postcssJs = require('postcss-js');
+const postcssGlobe = require('postcss-import-ext-glob');
+const postcssWatch = require('postcss-watch-folder');
 const fs = require('fs');
 
 const css = fs.readFileSync(__dirname + '/src/all.css', 'binary');
@@ -13,6 +15,7 @@ const root = postcss.parse(css);
 postcss([
   autoprefixer,
   postcssNested,
+  postcssGlobe,
   postcssImport({
     root: __dirname + '/src',
   }),

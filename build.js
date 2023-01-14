@@ -24,6 +24,7 @@ postcss([
     tp: 'dist/all.css',
   })
   .then(result => {
-    const cssJs = postcssJs.objectify(root);
+    const cssJs = postcssJs.objectify(result.root);
     fs.writeFileSync('./dist/components.json', JSON.stringify(cssJs, null, 2));
+    console.info('built successfully!');
   });

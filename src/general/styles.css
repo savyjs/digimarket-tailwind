@@ -1,3 +1,5 @@
+@import 'colors.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,11 +16,7 @@
 
 @layer components {
   .bg-default {
-    @apply bg-white dark:bg-dark;
-  }
-
-  .bg-default.dark {
-    @apply bg-dark;
+    @apply bg-white;
   }
 
   /* list and list items */

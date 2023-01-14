@@ -7,7 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      darkMode: true,
       colors: {
         transparent: 'transparent',
         primary: '#EF4056',
@@ -20,13 +19,6 @@ module.exports = {
         'dark-accent': '#343232',
         'light-accent': '#CCC',
         light: '#EEE',
-        gray: colors.gray,
-        blue: colors.sky,
-        red: colors.rose,
-        pink: colors.fuchsia,
-      },
-      fontFamily: {
-        sans: ['IRANSans'],
       },
     },
   },

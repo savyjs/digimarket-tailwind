@@ -4,7 +4,7 @@
   "description": "Tailwind Market Kit",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/all.css -o dist/full.css --config ./src/postcss.config.js",
+    "build": "node ./build.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write --loglevel=error . !CHANGELOG.md",
@@ -15,7 +15,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run format && npm run test"
+      "pre-commit": "npm run format && npm run build && npm run test"
     }
   },
   "repository": {

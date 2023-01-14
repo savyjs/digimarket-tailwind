@@ -1,50 +1,12 @@
+const cssJs = require('./dist/components.json');
 const plugin = require('tailwindcss/plugin');
-const autoprefixer = require('autoprefixer');
-const postcssNested = require('postcss-nested');
-const postcssImport = require('postcss-import');
-const postcssTailwincss = require('tailwindcss');
-const postcssTailwincssNesting = require('tailwindcss/nesting');
-// eslint-disable-next-line no-unused-vars
-const postcss = require('postcss');
-const postcssJs = require('postcss-js');
-const fs = require('fs');
-// eslint-disable-next-line no-unused-vars
 
-module.exports = plugin(async function ({
+module.exports = plugin(function ({
   addUtilities,
   addComponents,
   theme,
   variants,
 }) {
-  const css = fs.readFileSync(__dirname + '/src/all.css', 'binary');
-  const root = postcss.parse(css);
-  const cssFinal = await postcss([
-    autoprefixer,
-    postcssNested,
-    postcssImport({
-      root: __dirname + '/src',
-    }),
-    postcssTailwincss(require('./src/tailwind.config')),
-    postcssTailwincssNesting,
-  ]).process(root, {
-    from: 'src/all.css',
-    tp: 'dist/all.css',
-  });
-  const cssJs = postcssJs.objectify(root);
-
-  await fs.writeFileSync(
-    __dirname + '/dist/all.css',
-    cssFinal.css.toString(),
-    'binary'
-  );
-  if (cssFinal.map) {
-    fs.writeFile(
-      __dirname + '/dist/all.css.map',
-      cssFinal.map.toString(),
-      () => true
-    );
-  }
-
+  console.log({ cssJs });
   addComponents(cssJs);
-  addUtilities(cssJs);
 });

@@ -1,0 +1,22 @@
+@tailwind components
+@layer components {
+  .icon-small {
+    @apply w-4 h-4;
+  }
+
+  .icon-medium {
+    @apply w-6 h-6;
+  }
+
+  .icon-large {
+    @apply w-8 h-8;
+  }
+
+  .icon-gray {
+    @apply fill-gray-600;
+  }
+
+  .icon-primary {
+    @apply fill-red-600;
+  }
+}

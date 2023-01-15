@@ -29,5 +29,6 @@ postcss([
   .then(result => {
     const cssJs = postcssJs.objectify(result.root);
     fs.writeFileSync('./dist/components.json', JSON.stringify(cssJs, null, 2));
+    fs.writeFileSync('./dist/components.css', result.toString());
     console.info('built successfully!');
   });

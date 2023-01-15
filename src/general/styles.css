@@ -1,4 +1,5 @@
 @import 'colors.css';
+@import 'icons.scss';
 
 @tailwind base;
 @tailwind components;
@@ -17,81 +18,6 @@
 @layer components {
   .bg-default {
     @apply bg-white;
-  }
-
-  /* list and list items */
-  .list.list-primary {
-  }
-
-  .list.list-timeline {
-  }
-
-  .list {
-    @apply p-0;
-  }
-
-  .list .list-item {
-    @apply flex gap-1 py-5 align-middle;
-  }
-
-  .list.list-timeline .list-item {
-    @apply mx-[23pt] py-0;
-  }
-
-  .list.list-primary .list-item:hover {
-    @apply bg-gray-100;
-  }
-
-  .list.list-primary .list-item.active {
-    @apply border-r-2 border-red-300;
-  }
-
-  .list.list-timeline .list-item .list-item-text {
-    @apply align-middle flex self-center px-3;
-  }
-
-  .list.list-timeline .list-item .list-item-decoration {
-    @apply flex flex-col justify-center items-center;
-  }
-
-  .list.list-timeline .list-item .list-item-dot {
-    @apply w-2 h-2 bg-gray-300 rounded-full absolute;
-  }
-
-  .list.list-timeline .list-item .list-item-linedot {
-    @apply w-[1px] min-h-[70px] h-[100%] bg-gray-300 self-start justify-self-start;
-  }
-
-  .list.list-timeline .list-item-avatar {
-    @apply lg:max-w-[50pt] md:max-w-[50pt] max-w-[50px] px-[3pt] mb-0;
-  }
-
-  .list.list-timeline .list-item-avatar img {
-    @apply max-w-full max-h-full z-10;
-  }
-
-  .list .list-item .list-item-icon {
-    @apply min-w-[10%] flex justify-center text-center align-middle dark:fill-gray-200;
-  }
-
-  .list .list-item .list-item-text {
-    @apply dark:text-gray-200;
-  }
-
-  .list.list-timeline .list-item:last-child .list-item-decoration {
-    @apply justify-start;
-  }
-
-  .list.list-timeline .list-item:last-child .list-item-dot {
-    @apply self-center justify-self-center mt-[20px];
-  }
-
-  .list.list-timeline .list-item:last-child .list-item-linedot {
-    @apply min-h-[20px] max-h-[20px] justify-self-start self-start;
-  }
-
-  .list.list-timeline .list-item:first-child {
-    @apply px-0 mx-0;
   }
 
   .input-primary {
@@ -202,78 +128,6 @@
 
   .product-box-primary .delivery .icon-gray {
     @apply ml-1;
-  }
-
-  .icon-small {
-    @apply w-4 h-4;
-  }
-
-  .icon-medium {
-    @apply w-6 h-6;
-  }
-
-  .icon-large {
-    @apply w-8 h-8;
-  }
-
-  .icon-gray {
-    @apply fill-gray-600;
-  }
-
-  .icon-primary {
-    @apply fill-red-600;
-  }
-
-  .alert {
-    @apply flex p-1 my-1 text-[12px] rounded-lg gap-1 items-center;
-  }
-
-  .alert-info {
-    @apply alert text-blue-700 fill-blue-700;
-  }
-
-  .alert-warning {
-    @apply alert text-orange-400  fill-orange-400;
-  }
-
-  .alert-error {
-    @apply alert text-red-700  fill-red-700;
-  }
-
-  .alert-success {
-    @apply alert text-green-500 fill-green-500;
-  }
-
-  .time-table .nav-tabs li a {
-    @apply block font-medium text-xs leading-tight uppercase border-x-0 border-t-0 border-b-2 border-transparent px-6 p-0 my-0;
-  }
-
-  .time-table .nav-tabs li a.active {
-    @apply text-blue-300 fill-blue-300 border-blue-300 border-0;
-  }
-
-  .time-table .nav-tabs li a.active p:nth-child(2) {
-    @apply border-b-2 border-blue-300;
-  }
-
-  .time-table .nav-tabs li a div {
-    @apply flex flex-col text-center h-20 justify-around items-center p-0 text-[16px] font-bold pt-2;
-  }
-
-  .time-table .nav-tabs li a div p {
-    @apply pb-4;
-  }
-
-  .time-table .nav-tabs li a div p:nth-child(2) {
-    @apply text-[18px] font-semibold text-gray-600  w-8;
-  }
-
-  .list-options input[type='radio'] + label {
-    @apply fill-gray-400 cursor-pointer;
-  }
-
-  .list-options input[type='radio']:checked + label {
-    @apply fill-blue-400;
   }
 
   a[data-bs-toggle='collapse'] {

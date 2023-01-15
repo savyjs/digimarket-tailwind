@@ -37,6 +37,8 @@ function reBuild() {
         './dist/components.json',
         JSON.stringify(cssJs, null, 2)
       );
+      fs.writeFileSync('./dist/components.css', root.toString());
+
       console.info('built successfully!');
     });
 }

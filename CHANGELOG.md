@@ -4,21 +4,21 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.1.7](https://github.com/savyjs/marketplace-kit/compare/v0.1.4...v0.1.7) (2023-01-15)
 
-### [0.1.6](https://github.com/savyjs/tailwind-marketplace-kit/compare/v0.1.4...v0.1.6) (2023-01-15)
+### [0.1.6](https://github.com/savyjs/digimarket-kit/compare/v0.1.4...v0.1.6) (2023-01-15)
 
-### [0.1.4](https://github.com/savyjs/tailwind-marketplace-kit/compare/v0.1.3...v0.1.4) (2023-01-15)
+### [0.1.4](https://github.com/savyjs/digimarket-kit/compare/v0.1.3...v0.1.4) (2023-01-15)
 
 
 ### Features
 
-* add builder-watch ([1aa9e18](https://github.com/savyjs/tailwind-marketplace-kit/commit/1aa9e18d544804608933a5a6550f1bb997f461e4))
+* add builder-watch ([1aa9e18](https://github.com/savyjs/digimarket-kit/commit/1aa9e18d544804608933a5a6550f1bb997f461e4))
 
 
 ### Bug Fixes
 
-* **typo:** "tp" renamed to "to" ([f6c9a31](https://github.com/savyjs/tailwind-marketplace-kit/commit/f6c9a318815ad63a1241e2568ea25d93d4ed3a76))
+* **typo:** "tp" renamed to "to" ([f6c9a31](https://github.com/savyjs/digimarket-kit/commit/f6c9a318815ad63a1241e2568ea25d93d4ed3a76))
 
-### [0.1.3](https://github.com/savyjs/tailwind-marketplace-kit/compare/v0.1.2...v0.1.3) (2023-01-14)
+### [0.1.3](https://github.com/savyjs/digimarket-kit/compare/v0.1.2...v0.1.3) (2023-01-14)
 
 ### [0.1.2](https://github.com/savyjs/tmk/compare/v0.1.0...v0.1.2) (2023-01-14)
 

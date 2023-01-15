@@ -1,5 +1,5 @@
 {
-  "name": "marketplace-kit",
+  "name": "digimarket-kit",
   "version": "0.1.7",
   "description": "Marketplace Kit for tailwind",
   "main": "plugin.js",
@@ -21,12 +21,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/savyjs/marketplace-kit.git"
+    "url": "git+https://github.com/savyjs/digimarket-kit.git"
   },
   "bugs": {
-    "url": "https://github.com/savyjs/marketplace-kit/issues"
+    "url": "https://github.com/savyjs/digimarket-kit/issues"
   },
-  "homepage": "https://github.com/savyjs/marketplace-kit#readme",
+  "homepage": "https://github.com/savyjs/digimarket-kit#readme",
   "keywords": [
     "create-tailwind-plugin",
     "tailwind-css-plugin",

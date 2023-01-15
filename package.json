@@ -1,6 +1,6 @@
 {
   "name": "digimarket-kit",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Marketplace Kit for tailwind",
   "main": "plugin.js",
   "scripts": {

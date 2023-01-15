@@ -24,7 +24,7 @@ postcss([
 ])
   .process(root, {
     from: 'src/all.css',
-    tp: 'dist/all.css',
+    to: 'dist/all.css',
   })
   .then(result => {
     const cssJs = postcssJs.objectify(result.root);

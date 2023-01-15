@@ -1,7 +1,7 @@
 {
-  "name": "tailwind-marketpalce-kit",
-  "version": "0.1.4",
-  "description": "Tailwind Market Kit",
+  "name": "marketplace-kit",
+  "version": "0.1.5",
+  "description": "Marketplace Kit for tailwind",
   "main": "plugin.js",
   "scripts": {
     "build": "node ./build.js",

@@ -1,4 +1,7 @@
+@tailwind base
 @tailwind components
+@tailwind utilities
+
 @layer components {
   .icon-small {
     @apply w-4 h-4;

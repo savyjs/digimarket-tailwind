@@ -3,31 +3,24 @@ const postcssNested = require('postcss-nested');
 const postcssImport = require('postcss-import');
 const postcssTailwincss = require('tailwindcss');
 const postcssTailwincssNesting = require('tailwindcss/nesting');
-const postcss = require('postcss');
-const postcssJs = require('postcss-js');
 const postcssGlobe = require('postcss-import-ext-glob');
 const postcssWatch = require('postcss-watch-folder');
+const postcss = require('postcss')([
+  autoprefixer,
+  postcssNested({}),
+  postcssGlobe({}),
+  postcssImport({
+    root: __dirname + '/src',
+  }),
+  postcssTailwincss(require('./src/tailwind.config')),
+  postcssTailwincssNesting,
+]);
+const postcssJs = require('postcss-js');
 const fs = require('fs');
 
-const css = fs.readFileSync(__dirname + '/src/all.css', 'binary');
-const root = postcss.parse(css);
-
 function reBuild() {
-  postcss([
-    autoprefixer,
-    postcssNested,
-    postcssGlobe,
-    postcssWatch({
-      folder: './src',
-      main: './src/all.css',
-    }),
-    postcssImport({
-      root: __dirname + '/src',
-    }),
-    postcssTailwincss(require('./src/tailwind.config')),
-    postcssTailwincssNesting,
-  ])
-    .process(root, {
+  postcss
+    .process(css, {
       from: 'src/all.css',
       to: 'dist/all.css',
     })

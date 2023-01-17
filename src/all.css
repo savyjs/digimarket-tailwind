@@ -1,2 +1,8 @@
 @import 'general/styles.css';
 @import 'components/components.scss';
+@import-glob 'components/**/*.css';
+@import-glob 'components/**/*.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

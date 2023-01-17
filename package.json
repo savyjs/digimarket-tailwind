@@ -50,6 +50,8 @@
     "lodash": "^4.17.20",
     "postcss": "^8.1.9",
     "postcss-import-ext-glob": "^2.1.1",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.0",
     "postcss-watch-folder": "^2.0.0",
     "prettier": "^2.2.0",
     "standard-version": "^9.1.0",

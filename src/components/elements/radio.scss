@@ -1,0 +1,7 @@
+@tailwind components
+
+@layer components {
+  .radio-option {
+    @apply ring-2 ring-gray-200 checked:ring-0 focus:ring-transparent text-blue-400;
+  }
+}

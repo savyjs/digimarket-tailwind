@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.11](https://github.com/savyjs/digimarket-kit/compare/v0.1.9...v0.1.11) (2023-01-17)
+
+
+### Bug Fixes
+
+* **files:** separate sub component folders ([0bea809](https://github.com/savyjs/digimarket-kit/commit/0bea809b812ab3d3c88d0f5105fa5f725dcc2416))
+
 ### [0.1.10](https://github.com/savyjs/digimarket-kit/compare/v0.1.9...v0.1.10) (2023-01-17)
 
 

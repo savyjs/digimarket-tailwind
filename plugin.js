@@ -1,6 +1,6 @@
-const cssJs = require('./dist/components.json');
+const cssJs = require('./dist/plugin.json');
 const plugin = require('tailwindcss/plugin');
-const config = require('./src/tailwind.config');
+const config = require('./tailwind.config');
 
 module.exports = plugin(function ({ addComponents }) {
   addComponents(cssJs);

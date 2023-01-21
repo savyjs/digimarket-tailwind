@@ -1,8 +1,4 @@
-@import 'general/styles.css';
-@import 'components/components.scss';
 @import-glob 'components/**/*.css';
 @import-glob 'components/**/*.scss';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import-glob 'general/*.css';
+@import-glob 'general/*.scss';

@@ -5,15 +5,17 @@ const postcssTailwincss = require('tailwindcss');
 const postcssTailwincssNesting = require('tailwindcss/nesting');
 const postcssGlobe = require('postcss-import-ext-glob');
 const postcssWatch = require('postcss-watch-folder');
+const postcssPartialImport = require('postcss-partial-import');
+
 const postcss = require('postcss')([
   autoprefixer,
-  postcssNested({}),
+  postcssPartialImport({}),
+  postcssNested(),
+  postcssTailwincss(require('./tailwind.config')),
+  postcssTailwincssNesting({}),
+  postcssImport({}),
   postcssGlobe({}),
-  postcssImport({
-    root: __dirname + '/src',
-  }),
-  postcssTailwincss(require('./src/tailwind.config')),
-  postcssTailwincssNesting,
+  postcssImport({}),
 ]);
 const postcssJs = require('postcss-js');
 const fs = require('fs');

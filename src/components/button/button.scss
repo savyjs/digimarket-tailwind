@@ -1,10 +1,10 @@
-@tailwind components
+@layer base {
+  .btn {
+    @apply text-center justify-center flex rounded-lg bg-primary px-5 py-[2.5] text-center text-sm font-medium;
+  }
+}
 
 @layer components {
-  .btn {
-    @apply text-center justify-center flex rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-medium;
-  }
-
   .btn-primary {
     @apply btn;
   }

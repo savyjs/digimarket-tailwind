@@ -1,13 +1,8 @@
-@tailwind base
-@tailwind components
-
 @layer components {
   .alert {
     @apply flex p-1 my-1 text-[12px] rounded-lg gap-1 items-center;
   }
-}
 
-@layer components {
   .alert-info {
     @apply alert text-blue-700 fill-blue-700;
   }

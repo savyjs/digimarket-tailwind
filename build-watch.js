@@ -15,5 +15,5 @@ watcher
   })
   .on('unlink', path => {
     log(`File ${path} has been removed`);
-    reBuild();
+    build();
   });

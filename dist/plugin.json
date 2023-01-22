@@ -1293,6 +1293,9 @@
   ".inline-block": {
     "display": "inline-block"
   },
+  ".inline": {
+    "display": "inline"
+  },
   ".flex": {
     "display": "flex"
   },
@@ -2383,14 +2386,6 @@
       "color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter"
     ],
     "transitionTimingFunction": "cubic-bezier(.4,0,.2,1)"
-  },
-  ".transition-all": {
-    "transitionDuration": ".15s",
-    "transitionProperty": "all",
-    "transitionTimingFunction": "cubic-bezier(.4,0,.2,1)"
-  },
-  ".delay-75": {
-    "transitionDelay": "75ms"
   },
   ".delay-700": {
     "transitionDelay": ".7s"

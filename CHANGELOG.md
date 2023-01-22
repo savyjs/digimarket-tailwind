@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/savyjs/digimarket-kit/compare/v0.1.14...v0.2.0) (2023-01-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* tailwindcss directives removed
+
+### Bug Fixes
+
+* tailwindcss directives removed ([37f242a](https://github.com/savyjs/digimarket-kit/commit/37f242a1a431af9dc0c02c9e1c7e2ff076b13eb8))
+
 ### [0.1.14](https://github.com/savyjs/digimarket-kit/compare/v0.1.13...v0.1.14) (2023-01-17)
 
 ### [0.1.13](https://github.com/savyjs/digimarket-kit/compare/v0.1.12...v0.1.13) (2023-01-17)

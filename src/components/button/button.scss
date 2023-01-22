@@ -1,24 +1,14 @@
-@layer base {
-  .btn {
-    @apply text-center justify-center flex rounded-lg bg-primary px-5 py-[2.5] text-center text-sm font-medium;
-  }
-}
-
 @layer components {
-  .btn-primary {
-    @apply btn;
+  .btn {
+    @apply text-center justify-center flex rounded-lg px-5 py-2.5 text-center text-sm font-medium;
   }
 
   .btn-primary {
-    @apply text-white dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800;
+    @apply btn ;
   }
 
-  .btn-success {
-    @apply btn;
-  }
-
-  .btn-success {
-    @apply text-white bg-success dark:bg-success dark:hover:bg-success dark:focus:ring-success;
+  .btn-primary {
+    @apply bg-primary text-white dark:bg-primary dark:focus:ring-red-800;
   }
 
   .btn-primary-outlined {
@@ -26,7 +16,15 @@
   }
 
   .btn-primary-outlined {
-    @apply text-primary border-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 dark:text-gray-100 dark:bg-transparent;
+    @apply text-primary border-primary dark:focus:bg-primary dark:text-primary dark:bg-transparent;
+  }
+
+  .btn-success {
+    @apply btn;
+  }
+
+  .btn-success {
+    @apply text-white bg-success dark:bg-success dark:focus:ring-success;
   }
 
   .btn-success-outlined {
@@ -34,10 +32,22 @@
   }
 
   .btn-success-outlined {
-    @apply text-primary border-success dark:hover:bg-success dark:focus:ring-success dark:text-gray-100 dark:bg-transparent;
+    @apply text-success border-success dark:focus:ring-success dark:text-success dark:bg-transparent;
+  }
+
+  .btn-black {
+    @apply btn;
+  }
+
+  .btn-black {
+    @apply text-white bg-black dark:text-black dark:text-white;
+  }
+
+  .btn-black-outlined {
+    @apply btn-black bg-transparent border;
   }
 
   .btn-gray-outlined {
-    @apply flex rounded-lg border border-gray-400 px-5 py-2.5 text-center text-sm font-medium text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:text-gray-100 dark:bg-transparent;
+    @apply text-black border-black dark:focus:ring-black dark:text-gray-800 dark:bg-transparent;
   }
 }

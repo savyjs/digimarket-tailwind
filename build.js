@@ -4,30 +4,46 @@ const postcssImport = require('postcss-import');
 const postcssTailwincss = require('tailwindcss');
 const postcssTailwincssNesting = require('tailwindcss/nesting');
 const postcssGlobe = require('postcss-import-ext-glob');
-const postcssWatch = require('postcss-watch-folder');
-const postcss = require('postcss')([
-  autoprefixer,
-  postcssNested({}),
-  postcssGlobe({}),
-  postcssImport({
-    root: __dirname + '/src',
-  }),
-  postcssTailwincss(require('./src/tailwind.config')),
-  postcssTailwincssNesting,
-]);
+const cssnano = require('cssnano');
+const postcss = require('postcss');
 const postcssJs = require('postcss-js');
 const fs = require('fs');
+const tailwindcssConfig = require('./tailwind.config');
 
-const css = fs.readFileSync(__dirname + '/src/all.css', 'binary');
+async function build() {
+  const css = fs.readFileSync(__dirname + '/src/all.css', 'binary');
+  try {
+    let result = await postcss([
+      autoprefixer({}),
+      postcssGlobe({}),
+      postcssImport({}),
+      postcssNested(),
+    ]).process(css, {
+      from: 'src/all.css',
+      to: 'dist/all.css',
+    });
 
-postcss
-  .process(css, {
-    from: 'src/all.css',
-    to: 'dist/all.css',
-  })
-  .then(result => {
+    result = await result.processor.use(postcssImport({})).process(result);
+    result = await result.processor
+      .use(postcssTailwincss(tailwindcssConfig))
+      .process(result);
+    result = await result.processor
+      .use(postcssTailwincssNesting)
+      .process(result);
+    result = await result.processor.use(cssnano()).process(result);
+
+    // write json
     const cssJs = postcssJs.objectify(result.root);
-    fs.writeFileSync('./dist/components.json', JSON.stringify(cssJs, null, 2));
-    fs.writeFileSync('./dist/components.css', result.toString());
+    fs.writeFileSync('./dist/plugin.json', JSON.stringify(cssJs, null, 2));
+
+    // write css
+    fs.writeFileSync('./dist/all.css', result.css);
     console.info('built successfully!');
-  });
+  } catch (err) {
+    console.error({ err });
+    console.warn("can't build :(");
+  }
+}
+
+build();
+module.exports = build;

@@ -1,8 +1,12 @@
-@tailwind components
+@layer base {
+  .btn {
+    @apply text-center justify-center flex rounded-lg bg-primary px-5 py-[2.5] text-center text-sm font-medium;
+  }
+}
 
 @layer components {
   .btn-primary {
-    @apply text-center justify-center flex rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-medium;
+    @apply btn;
   }
 
   .btn-primary {
@@ -10,23 +14,27 @@
   }
 
   .btn-success {
-    @apply btn-primary;
+    @apply btn;
   }
 
   .btn-success {
-    @apply text-white dark:bg-success dark:hover:bg-success dark:focus:ring-success;
+    @apply text-white bg-success dark:bg-success dark:hover:bg-success dark:focus:ring-success;
   }
 
   .btn-primary-outlined {
-    @apply btn-primary bg-transparent border;
+    @apply btn bg-transparent border;
   }
 
   .btn-primary-outlined {
-    @apply bg-transparent text-primary border-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 dark:text-gray-100 dark:bg-transparent;
+    @apply text-primary border-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 dark:text-gray-100 dark:bg-transparent;
   }
 
   .btn-success-outlined {
-    @apply btn-primary bg-transparent text-primary border border-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800 dark:text-gray-100 dark:bg-transparent;
+    @apply btn-success bg-transparent border;
+  }
+
+  .btn-success-outlined {
+    @apply text-primary border-success dark:hover:bg-success dark:focus:ring-success dark:text-gray-100 dark:bg-transparent;
   }
 
   .btn-gray-outlined {

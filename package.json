@@ -1,6 +1,6 @@
 {
   "name": "digimarket-kit",
-  "version": "0.1.14",
+  "version": "0.2.0",
   "description": "Marketplace Kit for tailwind",
   "main": "plugin.js",
   "scripts": {
@@ -50,21 +50,24 @@
     "lodash": "^4.17.20",
     "postcss": "^8.1.9",
     "postcss-import-ext-glob": "^2.1.1",
-    "postcss-import": "^15.1.0",
-    "postcss-nested": "^6.0.0",
     "postcss-watch-folder": "^2.0.0",
     "prettier": "^2.2.0",
-    "standard-version": "^9.1.0",
-    "tailwindcss": "^3.2.4"
+    "standard-version": "^9.1.0"
   },
   "dependencies": {
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "autoprefixer": "^10.4.13",
     "chokidar": "^3.5.3",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
+    "postcss-debug": "^0.4.2",
     "postcss-import": "^15.1.0",
+    "postcss-import-ext-glob": "^2.1.1",
     "postcss-js": "^4.0.0",
     "postcss-nested": "^6.0.0",
-    "postcss-nesting": "^10.2.0"
+    "postcss-nesting": "^10.2.0",
+    "postcss-partial-import": "^4.1.0",
+    "postcss-watch-folder": "^2.0.0",
+    "tailwindcss": "^3.2.4"
   }
 }

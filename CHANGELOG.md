@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/savyjs/digimarket-kit/compare/v0.2.0...v0.2.1) (2023-01-22)
+
+
+### Bug Fixes
+
+* clean [@imports](https://github.com/imports) ([cdd5d59](https://github.com/savyjs/digimarket-kit/commit/cdd5d59a03973accf7aede879ea35ccea954ec56))
+* colors get removed - use default theme ([939a19a](https://github.com/savyjs/digimarket-kit/commit/939a19ab01c5f78bb330a0fa328a65f2aa7042ed))
+
 ## [0.2.0](https://github.com/savyjs/digimarket-kit/compare/v0.1.14...v0.2.0) (2023-01-22)
 
 

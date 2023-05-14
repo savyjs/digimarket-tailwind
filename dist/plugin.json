@@ -1030,10 +1030,7 @@
     "display": "block",
     "fontSize": ".75rem",
     "fontWeight": 500,
-    "lineHeight": [
-      "1rem",
-      1.25
-    ],
+    "lineHeight": ["1rem", 1.25],
     "marginBottom": "0",
     "marginTop": "0",
     "padding": "0 1.5rem",
@@ -1327,10 +1324,7 @@
     "height": "1rem"
   },
   ".h-fit": {
-    "height": [
-      "-moz-fit-content",
-      "fit-content"
-    ]
+    "height": ["-moz-fit-content", "fit-content"]
   },
   ".h-6": {
     "height": "1.5rem"

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.21](https://github.com/savyjs/digimarket-tailwind/compare/v0.2.2...v0.2.21) (2023-05-14)
+
+
+### Miscellaneous Chores
+
+* update CI ([abecd22](https://github.com/savyjs/digimarket-tailwind/commit/abecd22c37323e8627d99ed7669c1a1b14ce2662))
+
 ### [0.2.2](https://github.com/savyjs/digimarket-kit/compare/v0.2.0...v0.2.2) (2023-01-22)
 
 

@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.24](https://github.com/savyjs/digimarket-tailwind/compare/v0.2.23...v0.2.24) (2023-06-09)
+
+
+### Bug Fixes
+
+* direct import ([8721fbd](https://github.com/savyjs/digimarket-tailwind/commit/8721fbda06fc3c77619517fc15454ee121475daf))
+* direct import ([f51aca5](https://github.com/savyjs/digimarket-tailwind/commit/f51aca5ebbaa76699323ed50e0dfc1932c194e89))
+
 ## [0.2.23](https://github.com/savyjs/digimarket-tailwind/compare/v0.2.22...v0.2.23) (2023-05-14)
 
 

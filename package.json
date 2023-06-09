@@ -33,7 +33,7 @@
     "tailwindcss",
     "plugin"
   ],
-  "author": "savy",
+  "author": "savyJS",
   "license": "MIT",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
